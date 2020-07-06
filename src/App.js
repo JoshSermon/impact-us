@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Header from "./components/ui/Header";
+import CharacterGrid from "./components/characters/CharacterGrid";
 import "./App.css";
 
 const App = () => {
@@ -14,6 +15,9 @@ const App = () => {
       );
 
       console.log(result.data);
+
+      setItems(result.data);
+      setisLoading(false);
     };
 
     fetchItems();
@@ -22,6 +26,7 @@ const App = () => {
   return (
     <div className="container">
       <Header />
+      <CharacterGrid isLoading={isLoading} items={items} />
     </div>
   );
 };
