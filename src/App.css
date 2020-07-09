@@ -6,7 +6,7 @@
 
 html,
 body {
-  background: #000 url("../src/components/images/bg.jpg") no-repeat center
+  background: #000 url("../src/components/images/black.jpg") no-repeat center
     center/cover;
   height: 100vh;
   color: #fff;
@@ -26,7 +26,7 @@ a {
 .btn {
   display: inline-block;
   color: #fff;
-  background-color: #3fb573;
+  background-color: #1b4332;
   font-size: 1em;
   text-align: center;
   padding: 10px 15px;
@@ -55,10 +55,10 @@ header img {
 input[type="text"] {
   display: block;
   padding: 10px;
-  font-size: 20px;
+  font-size: 25px;
   border: 0;
-  border-radius: 5px;
-  width: 60%;
+  border-radius: 10px;
+  width: 58%;
   margin: auto;
 }
 
@@ -72,7 +72,7 @@ input[type="text"] {
   cursor: pointer;
   background-color: transparent;
   height: 300px;
-  perspective: 1000px;
+  perspective: 10000px;
 }
 
 .card h1 {
@@ -110,7 +110,7 @@ input[type="text"] {
 }
 
 .card-back {
-  background-color: #333;
+  background-color: #1b4332;
   color: white;
   padding: 20px;
   transform: rotateY(180deg);
